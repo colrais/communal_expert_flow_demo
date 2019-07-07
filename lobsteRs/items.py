@@ -14,17 +14,17 @@ class LobsteRsItem(scrapy.Item):
     num_comments = scrapy.Field()
     tags = scrapy.Field()
     reflink = scrapy.Field()
+    # commenter = scrapy.Field()
+    # com_upvotes = scrapy.Field()
+    # comment = scrapy.Field()
+    # com_age = scrapy.Field()
+    # net = scrapy.Field()
+    postID = scrapy.Field()
+
+class CommentsItem(scrapy.Item):
+    postID = scrapy.Field()
+    commentID = scrapy.Field()
     commenter = scrapy.Field()
     com_upvotes = scrapy.Field()
     comment = scrapy.Field()
     com_age = scrapy.Field()
-    net = scrapy.Field()
-#     postID = scrapy.Field()
-#
-# class CommentsItem(scrapy.Item):
-#     postID = scrapy.Field()
-#     commentID = scrapy.Field()
-#     commenter = scrapy.Field()
-#     com_upvotes = scrapy.Field()
-#     comment = scrapy.Field()
-#     com_age = scrapy.Field()
